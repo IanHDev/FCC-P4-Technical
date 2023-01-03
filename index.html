@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>CSS Documentation</title>
+</head>
+<body>
+  <!-- Navigation bar on the left side, moves to top under x window size -->
+  <Nav id="navbar">
+    <header>CSS Tips</header>
+    <ul>
+      <li>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+      <li>
+        <a class="nav-link" href="#The_Basics:_Anatomy,_Syntax_and_Linking_to_HTML">The basics: Anatomy, Syntax and Linking to HTML</a>
+      <li>
+        <a class="nav-link" href="#Naming_Conventions_Including_BEM">Naming Conventions Including BEM</a>
+      <li>
+        <a class="nav-link" href="#Inline_Versus_External_CSS">Inline Versus External CSS</a>
+      <li>
+        <a class="nav-link" href="#The_Box_Model">The Box Model</a>
+      <li>
+        <a class="nav-link" href="#CSS_Flexbox_and_Grid">CSS Flexbox and Grid</a>
+    </ul>
+  </Nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header class="header">
+        Introduction
+      </header>
+        <h1>
+          What is CSS?
+        </h1>
+        <p>
+          CSS stands for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets. CSS, is a simply designed language intended to simplify the process of making web pages presentable. CSS allows you to apply styles to web pages. More importantly, CSS enables you to do this independent of the HTML that makes up each web page. It describes how a webpage should look: it prescribes colors, fonts, spacing, and much more. In short, you can make your website look however you want. CSS lets developers and designers define how it behaves, including how elements are positioned in the browser.
+        <!-- Total of 10 P, 5 code elements, 5 LI items -->
+      </p>
+      
+        <h1>Why CSS?</h1>
+        <p>
+          <ul>
+            <li>
+              <div class="list_title">CSS saves time:</div> You can write CSS once and reuse the same sheet in multiple HTML pages.
+            <li>
+              <div class="list_title">Easy Maintenance:</div> To make a global change simply change the style, and all elements in all the webpages will be updated automatically.
+            <li>
+              <div class="list_title">Search Engines:</div> CSS is considered a clean coding technique, which means search engines won't have to struggle to “read” its content.
+            <li>
+              <div class="list_title">Superior styles to HTML:</div> CSS has a much wider array of attributes than HTML, so you can give a far better look to your HTML page in comparison to HTML attributes.
+            <li>
+              <div class="list_title">Offline Browsing:</div> CSS can store web applications locally with the help of an offline cache. Using this we can view offline websites.
+              <!-- Information from: https://www.geeksforgeeks.org/css-introduction/ -->
+      <content>
+
+      </content>
+    </section>
+
+    <section class="main-section" id="The_Basics:_Anatomy,_Syntax_and_Linking_to_HTML">
+      <header class="header">
+        <!-- Title of section -->
+      </header>
+      <p>
+        <!-- Total of 10 P, 5 code elements, 5 LI items -->
+      </p>
+
+    </section>
+    <section class="main-section" id="Naming_Conventions_Including_BEM">
+      <header class="header">
+        <!-- Title of section -->
+      </header>
+      <p>
+        <!-- Total of 10 P, 5 code elements, 5 LI items -->
+      </p>
+
+    </section>
+
+    <section class="main-section" id="Inline_Versus_External_CSS">
+      <header class="header">
+        <!-- Title of section -->
+      </header>
+      <p>
+        <!-- Total of 10 P, 5 code elements, 5 LI items -->
+      </p>
+
+    </section>
+
+    <section class="main-section" id="The_Box_Model">
+      <header class="header">
+        <!-- Title of section -->
+      </header>
+      <p>
+        <!-- Total of 10 P, 5 code elements, 5 LI items -->
+      </p>
+
+    </section>
+
+    <section class="main-section" id="CSS_Flexbox_and_Grid">
+      <header class="header">
+        <!-- Title of section -->
+      </header>
+      <p>
+        <!-- Total of 10 P, 5 code elements, 5 LI items -->
+      </p>
+
+    </section>
+
+    
+  </main>
+  <!-- User Stories:
+
+    Sections:
+    The basics: anatomy, syntax and linking to html
+    different types of selectors
+    naming conventions including BEM
+    inline vs external css
+    css box model
+    css flexbox
+    css grid
+    css systems
+
+    
+
+
+
+You can see a main element with a corresponding id="main-doc", which contains the page's main content technical documentation)
+Within the #main-doc element, you can see several section elements, each with a class of main-section. There should be a minimum of five
+The first element within each .main-section should be a header element, which contains text that describes the topic of that section.
+Each section element with tshe class of main-ection should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java")
+The .main-section elements should contain at least ten p elements total (not each)
+The .main-section elements should contain at least five code elements total (not each)
+The .main-section elements should contain at least five li items total (not each)
+You can see a nav element with a corresponding id="navbar"
+
+The navbar element should contain one header element which contains text that describes the topic of the technical documentation
+Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section
+The header element in the #navbar must come before any link (a) elements in the navbar
+Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world")
+When you click on a navbar element, the page should navigate to the corresponding section of the main-doc element (e.g. If you click on a nav-link element that contains the text "Hello world", the page navigates to a section element with that id, and contains the corresponding header)
+On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user
+Your technical documentation should use at least one media query
+Fulfill the user stories and pass all the tests below to complete this project. Give it your own personal style. Happy Coding!
+
+Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to link your stylesheet and apply your CSS
+
+ -->
+ 
+</body>
+</html>
