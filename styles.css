@@ -1,4 +1,9 @@
 /* 
 -Style for typescript (for content sections)
 
+
 */
+
+.capitalize {
+  text-transform:capitalize;
+}
