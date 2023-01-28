@@ -10,61 +10,81 @@
 <body>
   <!-- Navigation bar on the left side, moves to top under x window size -->
   <Nav id="navbar">
-    <header>CSS Tips</header>
+    <header>CSS Basics</header>
     <ul>
       <li>
-        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#CSS">CSS</a>
       <li>
-        <a class="nav-link" href="#The_Basics:_Anatomy,_Syntax_and_Linking_to_HTML">The basics: Anatomy, Syntax and Linking to HTML</a>
+        <a class="nav-link" href="#CSS_Introduction">CSS Introduction</a>
       <li>
-        <a class="nav-link" href="#Naming_Conventions_Including_BEM">Naming Conventions Including BEM</a>
+        <a class="nav-link" href="#CSS_Full_Form">CSS Full Form</a>
       <li>
-        <a class="nav-link" href="#Inline_Versus_External_CSS">Inline Versus External CSS</a>
+        <a class="nav-link" href="#What_is_the_best_way_to_include_CSS_file?_Why_use_@import?">What is the best way to include CSS file? Why use @import?</a>
       <li>
-        <a class="nav-link" href="#The_Box_Model">The Box Model</a>
+        <a class="nav-link" href="#CSS_Comments">CSS Comments</a>
       <li>
-        <a class="nav-link" href="#CSS_Flexbox_and_Grid">CSS Flexbox and Grid</a>
+        <a class="nav-link" href="#CSS_Colors">CSS Colors</a>
+      <li>
+        <a class="nav-link" href="#CSS_Backbround">Css Background</a>
     </ul>
   </Nav>
+
+
   <main id="main-doc">
-    <section class="main-section" id="Introduction">
+    <section class="main-section" id="CSS">
+      <!-- Info pulled from: https://www.geeksforgeeks.org/css/?ref=lbp -->
       <header class="header">
-        Introduction
+        CSS
       </header>
-        <h1>
-          What is CSS?
-        </h1>
-        <p>
-          CSS stands for 
-          <span class="capitalize">Cascading Style Sheets.</span> CSS, is a simply designed language intended to simplify the process of making web pages presentable. Styling, or presenting web pages in a customized format, has gone beyong the scope of standard HTML. HTML is mostly now reserved for presenting the actual data of the web page. While a developer may still insert styling into the HTML, separating the styling data from the HTML data allows for more detailed and efficient use of the code.
-
-          <img src="img/css_graphic.jpg" alt="css graphic">
-
-
+      <p>
+        <strong>CSS (Cascading Style Sheets)</strong> is used to apply styles to web pages. Cascading Style Sheets are fondly referred to as CSS. It is used to make web pages presentable. The reason for using this is to simplify the process of making web pages presentable. It allows you to apply styles on web pages. More importantly, it enables you to do this independently of the HTML that makes up each web page.
       </p>
-      
-        <h1>Why CSS?</h1>
-        <p>
-          <ul>
-            <li>
-              <div class="list_title">CSS saves time:</div> You can write CSS once and reuse the same sheet in multiple HTML pages.
-            <li>
-              <div class="list_title">Easy Maintenance:</div> To make a global change simply change the style, and all elements in all the webpages will be updated automatically.
-            <li>
-              <div class="list_title">Search Engines:</div> CSS is considered a clean coding technique, which means search engines won't have to struggle to “read” its content.
-            <li>
-              <div class="list_title">Superior styles to HTML:</div> CSS has a much wider array of attributes than HTML, so you can give a far better look to your HTML page in comparison to HTML attributes.
-            <li>
-              <div class="list_title">Offline Browsing:</div> CSS can store web applications locally with the help of an offline cache. Using this we can view offline websites.
-              <!-- Information from: https://www.geeksforgeeks.org/css-introduction/ -->
-      <content>
 
-      </content>
+      <img src="img/CSSTutorial.png" alt="CSS Graphic">
+
+      <h2> Why we learn CSS? </h2>
+
+      <p>
+        Styling is an essential property for any website. It increases the standards and overall look of the website that makes it easier for the user to interact with it. A website can be made without CSS, as styling is MUST since no user would want to interact with a dull and shabby website. So for knowing Web Development, learning CSS is mandatory.
+      </p>
+
+      <p>
+        <strong>Basic Format: </strong> It is the basic structure of a webpage.
+        <div class="code_block">
+            <!-- body {
+              background-color: lightgray;
+        }
+          h1 {
+              color: green;
+              text-align: center;
+        }
+          p {
+              font-family: sans-serif;
+              font-size: 16px;
+       } -->
+       <!-- This code block is improperly formated. Learn how to format code in an html document (Like the website.) -->
+        </div>
+        
+      </p>
+
+
     </section>
 
-    <section class="main-section" id="The_Basics:_Anatomy,_Syntax_and_Linking_to_HTML">
+
+    <section class="main-section" id="CSS_Introduction">
       <header class="header">
-        The Basics: Anatomy, Syntax and Linking to HTML
+        CSS Introduction
+      </header>
+      <p>
+        <!-- Total of 10 P, 5 code elements, 5 LI items -->
+      </p>
+
+    </section>
+
+
+    <section class="main-section" id="CSS_Full_Form">
+      <header class="header">
+        CSS Full Form
       </header>
       <p>
         <!-- Total of 10 P, 5 code elements, 5 LI items -->
@@ -78,9 +98,18 @@
       </p>
 
     </section>
-    <section class="main-section" id="Naming_Conventions_Including_BEM">
+    <section class="main-section" id="What_is_the_best_way_to_include_CSS_file?_Why_use_@import?">
       <header class="header">
-        Naming Conventions Including BEM
+        What is the best way to include CSS file? Why use @import?
+      </header>
+      <p>
+        <!-- Total of 10 P, 5 code elements, 5 LI items -->
+      </p>
+    </section>
+
+    <section class="main-section" id="CSS_Comments">
+      <header class="header">
+        CSS Comments
       </header>
       <p>
         <!-- Total of 10 P, 5 code elements, 5 LI items -->
@@ -88,20 +117,9 @@
 
     </section>
 
-    <section class="main-section" id="Inline_Versus_External_CSS">
+    <section class="main-section" id="CSS_Colors">
       <header class="header">
-        Inline Versus External CSS        
-        While CSS can be used within an html file, creating a separate document will allow the underlying code better readability and customization. Inline CSS (CSS used inside an HTML document) 
-      </header>
-      <p>
-        <!-- Total of 10 P, 5 code elements, 5 LI items -->
-      </p>
-
-    </section>
-
-    <section class="main-section" id="The_Box_Model">
-      <header class="header">
-        The Box Model
+        CSS Colors
         
       </header>
       <p>
@@ -110,9 +128,9 @@
 
     </section>
 
-    <section class="main-section" id="CSS_Flexbox_and_Grid">
+    <section class="main-section" id="CSS_Background">
       <header class="header">
-        CSS Flexbox and Grid
+        CSS Background
       </header>
       <p>
         <!-- Total of 10 P, 5 code elements, 5 LI items -->
