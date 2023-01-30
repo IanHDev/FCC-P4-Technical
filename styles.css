@@ -7,7 +7,9 @@
 .capitalize {
   text-transform:capitalize;
 }
-
+html {
+  background-color: blueviolet;
+}
 .codeblock {
   
 }
