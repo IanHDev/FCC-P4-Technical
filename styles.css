@@ -5,8 +5,16 @@
 */
 
 .capitalize {
-  text-transform:capitalize;
+  /* Inline block element require for the ::first-letter CSS selector to function properly. Alternatives are to wrap words in <p>*/
+  display: inline-block;
 }
+
+.capitalize::first-letter {
+  display: inline-block;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
 html {
   background-color: blueviolet;
 }
