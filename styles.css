@@ -1,3 +1,87 @@
+/* -------------- */
+/* CSS Reset */
+/* -------------- */
+
+
+/* Box Sizing Rules */
+/* This puts the padding and border inside the box, making size adjustments easier */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+/* Different browsers may treat margins differently, this reset where the margan shall start */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin:0;
+}
+
+/* Set body defaults */
+body {
+  /* Use 100% of the viewport height */
+  min-height: 100vh;
+  /* Make lines easier to read */
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  }
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+/* General */
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+
+
+
 /* 
 -Style for typescript (for content sections)
 
